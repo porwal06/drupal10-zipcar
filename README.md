@@ -9,6 +9,9 @@
 * Login with:
    - As admin -  admin/121212
    - As Authenticated user - deepak/123456
+* Check URL as authenticated user
+   - http://localhost/drupal10-zipcar/web/zipcar-rental (English)
+   - http://localhost/drupal10-zipcar/web/fr/zipcar-rental (French)
 
   # Proof video
 
@@ -20,8 +23,10 @@
   * Few design fix issue for mobile/desktop screen
   * Add Loading icon while loading/searching cars for user interection
   * API validation handling
+  * Fix missing logo image on multilingual site
  
   # Test with existing drupal project.
+  
   * Download module & enable it. https://github.com/porwal06/drupal10-zipcar/tree/main/web/modules/custom/zipcar_rental
   * Download theme & set as default. https://github.com/porwal06/drupal10-zipcar/tree/main/web/themes/custom/zipcar_theme
   * For multilingual setting enable core Language module and setup from - /admin/config/regional/language
