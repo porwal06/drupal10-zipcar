@@ -1,0 +1,274 @@
+.zipcar-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Lato';
+    background-color: #fff;
+}
+
+#zipcar-rental-form {
+    margin-bottom: 20px;
+}
+
+#zipcar-rental-form input {
+    margin-right: 10px;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: auto;
+    display: inline;
+}
+
+h1,
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+.search-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.search-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.search-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.search-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #79b752;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.search-results {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/*.car-item {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.car-image {
+    flex: 0 0 150px;
+    margin-right: 20px;
+}
+.car-image img {
+    max-width: 100%;
+    height: auto;
+}
+.car-details {
+    flex: 1;
+}*/
+.car-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.car-price {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.car-price-day {
+    color: #666;
+    font-size: 14px;
+}
+
+.select-car {
+    background-color: #55A646;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+.required-tag {
+    background-color: #e6f3ff;
+    color: #0066cc;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.car-item {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.image-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.image-title h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: left;
+    margin: 10px;
+}
+
+.image-title span {
+    font-style: italic;
+    font-weight: 300;
+    color: #1A1926;
+}
+
+.image-title img {
+    max-width: 100%;
+    height: auto;
+}
+
+.details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+/* Desktop layout (two columns) */
+@media screen and (min-width: 768px) {
+    .car-item {
+        flex-direction: row;
+    }
+
+    .image-title,
+    .details {
+        flex: 1;
+        padding: 0 16px;
+    }
+
+    /* Title above image on desktop */
+    .image-title h2 {
+        order: -1;
+        /* This puts the title above the image */
+    }
+
+    h2 {
+        text-align: left;
+        font-size: 2rem;
+    }
+
+    .price {
+        text-align: right;
+    }
+
+    button {
+        align-self: flex-end;
+    }
+}
+
+/* Mobile layout (single column) */
+@media screen and (max-width: 767px) {
+    .car-item {
+        flex-direction: column;
+        max-width: 340px;
+    }
+
+    /* Title below image on mobile */
+    .image-title {
+        flex-direction: column-reverse;
+        /* This moves the title below the image */
+        margin-top: 20px;
+    }
+
+    h2,
+    .price,
+    .description,
+    button {
+        text-align: center;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .required-tag {
+        position: absolute;
+        top: 0;
+        width: 90%;
+        margin: 0;
+    }
+}
+
+.car_price span {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: #71717A;
+}
+
+.car_price {
+    font-family: Asap;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 33px;
+    text-align: left;
+    color: #1E2022;
+}
+p.estimate {
+    color: #1A1926;
+    font-size: 12px;
+}

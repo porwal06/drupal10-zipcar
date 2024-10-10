@@ -1,0 +1,15 @@
+zipcar_rental.content:
+  path: '/zipcar-rental'
+  defaults:
+    _controller: '\Drupal\zipcar_rental\Controller\ZipcarRentalController::content'
+    _title: ''
+  requirements:
+    _role: 'authenticated'
+
+zipcar_rental.get_cars:
+  path: '/zipcar-rental/cars'
+  defaults:
+    _controller: '\Drupal\zipcar_rental\Controller\ZipcarRentalController::getCars'
+  requirements:
+    _permission: 'access content'
+  methods: [GET]

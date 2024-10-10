@@ -1,0 +1,21 @@
+name: zipcar_theme
+type: theme
+base theme: olivero
+description: Custom theme for ZipCar.
+package: Custom
+core: 10.x
+core_version_requirement: ^10
+libraries:
+  - zipcar_theme/global
+regions:
+  # header: 'Header'
+  # primary_menu: 'Primary menu'
+  content: 'Content'
+libraries-override:
+  olivero/global-styling:
+    css:
+      component:
+        css/components/header.css: false
+        css/components/footer.css: false
+      layout:
+        css/layout/social-bar.css: false

@@ -1,0 +1,7 @@
+name: Zipcar Rental
+type: module
+description: 'Provides Zipcar rental functionality'
+package: Custom
+core_version_requirement: ^10
+dependencies:
+  - drupal:block

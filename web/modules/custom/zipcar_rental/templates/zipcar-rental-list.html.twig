@@ -1,0 +1,24 @@
+<div class="zipcar-container">
+        <div class="logo">
+        {% set module_path = _self|split('/templates') %}
+            <img src="{{ base_path ~ directory }}/images/logo.png" alt="Zipcar logo">
+        </div>
+        
+        <h1>{{'Search for a car'|t}}</h1>
+        <form class="search-form" id="zipcar-rental-form">
+            <label for="hours">{{'How many hours would you like to rent the Zipcar?'|t}}</label>
+            <input type="text" id="zipcar-rental-hours" {{ attributes.setAttribute('placeholder', 'Enter number of hours'|t) }} >
+            <button type="submit">{{'Submit'|t}}</button>
+        </form>
+        
+        <div class="search-results">
+            <h2>{{'Search results'|t}}</h2>
+            
+            <div class="search-bar">
+                <input type="text" id="zipcar-rental-search" {{ attributes.setAttribute('placeholder', 'Search by name here'|t) }}>
+            </div>
+            
+            <div id="zipcar-rental-results"></div>
+            
+        </div>
+    </div>

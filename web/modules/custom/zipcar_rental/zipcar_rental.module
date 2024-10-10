@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Zipcar Rental module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function zipcar_rental_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.zipcar_rental':
+      return '<p>' . t('Provides Zipcar rental functionality.') . '</p>';
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function zipcar_rental_theme($existing, $type, $theme, $path) {
+  return [
+    'zipcar_rental_list' => [
+      'variables' => [
+        'cars' => [],
+        'hours' => NULL,
+      ],
+    ],
+  ];
+}

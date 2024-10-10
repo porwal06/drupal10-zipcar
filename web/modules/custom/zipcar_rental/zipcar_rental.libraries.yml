@@ -1,0 +1,22 @@
+zipcar_rental:
+  version: 1.x
+  js:
+    js/zipcar_rental.js: {}
+  css:
+    theme:
+      css/zipcar_rental.css: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/once
+zipcar_rental_block:
+  version: 1.x
+  js:
+    js/zipcar_rental_block.js: {}
+  css:
+    theme:
+      css/zipcar_rental_block.css: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/once

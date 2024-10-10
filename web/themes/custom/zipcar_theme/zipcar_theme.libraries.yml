@@ -1,0 +1,14 @@
+# Main theme library.
+global:
+  js:
+    js/zipcar-theme.js: {}
+  css:
+    base:
+      css/base/style.css: {}
+    component:
+      css/components/header.css: {}      
+      css/components/footer.css: {} 
+    layout:
+      css/layouts/layout.css: {}
+    theme:
+      css/theme/print.css: { media: print }
