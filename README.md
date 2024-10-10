@@ -7,8 +7,8 @@
 * Open settings.php file and update database configuration at bottom of the file. https://github.com/porwal06/drupal10-zipcar/blob/main/web/sites/default/settings.php
 * Project is ready to run on your localhost. ie. http://localhost/drupal10-zipcar/web
 * Login with:
-  As admin -  admin/121212
-  As Authenticated user - deepak/123456
+   - As admin -  admin/121212
+   - As Authenticated user - deepak/123456
 
   # Proof video
 
