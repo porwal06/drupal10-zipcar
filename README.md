@@ -1,4 +1,4 @@
-# Project Setup
+# Project Setup on local
 
 * git clone https://github.com/porwal06/drupal10-zipcar.git in your PHP working directory (eg /var/www/html)
 * cd drupal10-zipcar
@@ -15,9 +15,14 @@
   https://github.com/user-attachments/assets/98822aac-c23e-49e5-b820-c98cb610a355
 
 
-  #Todo
+  # Todo
 
   * Few design fix issue for mobile/desktop screen
   * Add Loading icon while loading/searching cars for user interection
   * API validation handling
+ 
+  # Test with existing drupal project.
+  * Download module & enable it. https://github.com/porwal06/drupal10-zipcar/tree/main/web/modules/custom/zipcar_rental
+  * Download theme & set as default. https://github.com/porwal06/drupal10-zipcar/tree/main/web/themes/custom/zipcar_theme
+  * For multilingual setting enable core Language module and setup from - /admin/config/regional/language
 
